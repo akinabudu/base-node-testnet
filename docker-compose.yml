@@ -14,7 +14,7 @@ services:
         - ${HOST_DATA_DIR}:/data
     env_file:
       # select your network here:
-#      - .env.sepolia
+      - .env.sepolia
 #      - .env.mainnet
   node:
     build:
@@ -31,5 +31,5 @@ services:
     command: [ "bash", "./op-node-entrypoint" ]
     env_file:
       # select your network here:
-#      - .env.sepolia
+      - .env.sepolia
 #      - .env.mainnet
